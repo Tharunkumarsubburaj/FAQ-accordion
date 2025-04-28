@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body text-work-sans>
+    <div class="container relative p-10 flex flex-col items-center justify-center min-h-screen min-w-screen sm:p-2
+        before:absolute before:bg-[url('../assets/images/background-pattern-mobile.svg')] before:bg-no-repeat before:bg-cover sm:before:bg-[url('../assets/images/background-pattern-desktop.svg')] before:top-0 before:left-0 before:w-full before:h-100 ">
+        <div class="faq-accordion bg-red-100 p-5 rounded-lg shadow-2xl w-full max-w-xl z-2 flex flex-col gap-9">
+            <h1 class="text-xl sm:text-2xl font-bold text-center text-gray-800  flex items-center gap-1">
+                <img src="../assets/images/icon-star.svg" alt="">
+                FAQs
+            </h1>
+            <div class="faq-item gap-1">
+                <div class="question flex justify-between items-center">
+                    <h1 class="faq-question text-md sm:text-xl font-bold">What is python?</h1>
+                    <button class="faq-toggle" id="faq-toggle-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/></svg>
+                    </button>
+                </div>
+                <div class="answer hidden text-gray-600/90 py-2 pr-5">
+                    <p class="faq-answer">Python is a high-level, general-purpose programming language known for being easy to read and write. It’s often used for:Web development (e.g., with Django or Flask),Data analysis and machine learning (e.g., with pandas, NumPy, scikit-learn),Automation and scripting,Software development and testing,Artificial Intelligence.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question flex justify-between items-center">
+                    <h1 class="faq-question text-md sm:text-xl font-bold">What is C programming?</h1>
+                    <button class="faq-toggle" id="faq-toggle-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/></svg>
+                    </button>
+                </div>
+                <div class="answer hidden text-gray-600/90 py-2 pr-5">
+                    <p class="faq-answer">C is a general-purpose, low-level programming language that’s known for being fast, efficient, and close to the hardware. It was created in the early 1970s and is the foundation for many modern languages like C++, Java, and even Python (which is partly written in C).</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question flex justify-between items-center">
+                    <h1 class="faq-question text-md sm:text-xl font-bold">What is JavaScript</h1>
+                    <button class="faq-toggle" id="faq-toggle-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/></svg>
+                    </button>
+                </div>
+                <div class="answer hidden text-gray-600/90 py-2 pr-5">
+                    <p class="faq-answer">JavaScript (JS) is a high-level, interpreted programming language mainly used to make websites interactive and dynamic. It's a core technology of the web, alongside HTML and CSS.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question flex justify-between items-center">
+                    <h1 class="faq-question text-md sm:text-xl font-bold">What is TypeScript?</h1>
+                    <button class="faq-toggle" id="faq-toggle-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/></svg>
+                    </button>
+                </div>
+                <div class="answer hidden text-gray-600/90 py-2 pr-5">
+                    <p class="faq-answer">TypeScript is a superset of JavaScript that adds static typing to the language. It was created by Microsoft to make JavaScript development more robust, maintainable, and scalable, especially for large projects.Basically, TypeScript is JavaScript + types.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question flex justify-between items-center">
+                    <h1 class="faq-question text-md sm:text-xl font-bold">What is C++ programming?</h1>
+                    <button class="faq-toggle" id="faq-toggle-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/></svg>
+                    </button>
+                </div>
+                <div class="answer hidden text-gray-600/90 py-2 pr-5">
+                    <p class="faq-answer">C++ is an extension of C that adds object-oriented programming (OOP) features, like classes and inheritance, on top of C’s speed and low-level control.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question flex justify-between items-center">
+                    <h1 class="faq-question text-md sm:text-xl font-bold">What is Jvav?</h1>
+                    <button class="faq-toggle" id="faq-toggle-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/></svg>
+                    </button>
+                </div>
+                <div class="answer hidden text-gray-600/90 py-2 pr-5">
+                    <p class="faq-answer">Java is a high-level, object-oriented programming language designed to be portable, secure, and platform-independent—meaning you can write code once and run it anywhere ("write once, run anywhere"). </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripting -->
+
+    <script src="script.js"></script>
+
+    <!-- scripting --> 
+</body>
+</html>
